@@ -1,0 +1,81 @@
+body {
+  background: $bg;
+}
+h1 {
+  font-family: $titleFont;
+  color: $fontColor;
+}
+h2 {
+  font-family: $titleFont;
+  color: $fontColor;
+}
+h3 {
+  font-family: $mainText;
+  color: $fontColor;
+}
+p {
+  padding: $padSmall;
+  font-family: $mainText;
+  color: $fontColor;
+  text-align: $paragraphAlign;
+}
+ul {
+  list-style: $ulDecor;
+  font-family: $mainText;
+  color: $fontColor;
+  text-align: $paragraphAlign;
+}
+li {
+  padding-bottom: $padSmall;
+}
+.nav {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.navItem {
+  float: left;
+}
+
+.navItem .navLink {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+li a:hover {
+  background-color: #111;
+}
+
+.grid-container {
+  display: $gridDisplay;
+  gap: $gap;
+  padding: $padSmall;
+}
+.grid-item {
+  text-align: center;
+  background-color: $bgLight;
+  padding: $padMed;
+}
+
+.navigation {
+  grid-column: $fullRow;
+  grid-row: 1;
+}
+
+.middleContent {
+  grid-column: $middleRow;
+  grid-row: 2;
+}
+
+.footer {
+  grid-column: $fullRow;
+  grid-row: 3;
+}
